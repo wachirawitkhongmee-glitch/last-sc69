@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สภานักเรียน ปีการศึกษา 2569 | โรงเรียนบดินทรเดชา (สิงห์ สิงหเสนี) ๒</title>
+    <meta name="description"
+        content="เว็บไซต์สภานักเรียน ปีการศึกษา 2569 โรงเรียนบดินทรเดชา (สิงห์ สิงหเสนี) ๒ - ข่าวสาร กิจกรรม คลังข้อสอบ และช่องทางติดต่อสภานักเรียน">
+    <meta name="keywords" content="สภานักเรียน, บดินทรเดชา 2, ปีการศึกษา 2569, คลังข้อสอบ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                        <path d="M20 8 L20 32 M12 16 L28 16 M14 24 L26 24" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+                <span class="logo-text">สภานักเรียน <span class="logo-accent">บ.ด.๒</span></span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active" data-section="home">หน้าแรก</a>
+
+                <!-- ข้อมูลสภาฯ Dropdown -->
+                <div class="nav-item-dropdown">
+                    <a href="#about" class="nav-link dropdown-toggle" data-section="about">ข้อมูลสภาฯ <span
+                            class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="#about-history" class="dropdown-item">ประวัติสภานักเรียน</a>
+                        <a href="#about-structure" class="dropdown-item">โครงสร้างการบริหาร</a>
+                    </div>
+                </div>
+
+                <a href="#members" class="nav-link" data-section="members">สมาชิกสภานักเรียน</a>
+                <a href="#exams" class="nav-link" data-section="exams">คลังข้อสอบ</a>
+                <a href="#contact" class="nav-link" data-section="contact">ติดต่อ/ร้องเรียน</a>
+
+                <!-- Admin Button Mobile -->
+                <div class="nav-admin-btn-mobile admin-login-trigger">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <span>เข้าสู่ระบบ Admin</span>
+                </div>
+            </div>
+
+            <!-- Admin Button Desktop -->
+            <button class="nav-admin-btn admin-login-trigger">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                </svg>
+                <span>Admin</span>
+            </button>
+
+            <button class="nav-toggle" id="navToggle" aria-label="เปิดเมนู">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+                ปีการศึกษา 2569
+            </div>
+            <h1 class="hero-title" data-aos="fade-up">
+                <span class="title-line">สภานักเรียน ปีการศึกษา 2569 </span>
+                <span class="title-school">โรงเรียนบดินทรเดชา (สิงห์ สิงหเสนี) ๒</span>
+            </h1>
+            <p class="hero-slogan" data-aos="fade-up" data-aos-delay="200">
+                "ร่วมสร้างสรรค์ พัฒนาโรงเรียน เพื่อนักเรียนทุกคน"
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <!-- ===================== PORTAL NEWS & CALENDAR ===================== -->
+    <section id="news" class="section news-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">อัปเดตล่าสุด</span>
+                <h2 class="section-title">ข่าวสาร & ปฏิทินกิจกรรม</h2>
+                <p class="section-desc">ติดตามข้อมูลประชาสัมพันธ์และตารางดำเนินกิจกรรมของสภานักเรียน บ.ด.๒</p>
+            </div>
+
+            <div class="portal-layout" data-aos="fade-up">
+                <!-- Left: News column -->
+                <div class="portal-column news-column">
+                    <div class="column-header">
+                        <div class="header-title-box">
+                            <span class="header-icon">📢</span>
+                            <h3>ข่าวประชาสัมพันธ์สภานักเรียน</h3>
+                        </div>
+                    </div>
+
+                    <div class="news-list-flat" id="newsListContainer">
+                        <!-- News items rendered dynamically from localStorage by script.js -->
+                    </div>
+                </div>
+
+                <!-- Right: Calendar column -->
+                <div class="portal-column calendar-column">
+                    <div class="column-header">
+                        <div class="header-title-box">
+                            <span class="header-icon">📅</span>
+                            <h3>ปฏิทินกิจกรรมสภานักเรียน</h3>
+                        </div>
+                    </div>
+
+                    <div class="calendar-list-flat" id="eventListContainer">
+                        <!-- Calendar events rendered dynamically from localStorage by script.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">ข้อมูลทั่วไป</span>
+                <h2 class="section-title">ข้อมูลสภานักเรียน</h2>
+                <p class="section-desc">ทำความเข้าใจในบทบาท โครงสร้างการบริหาร และเกียรติประวัติคณะทำงานสภานักเรียน
+                    บ.ด.๒</p>
+            </div>
+
+            <!-- About Sub-sections -->
+            <div class="about-grid">
+                <!-- 1. History Card -->
+                <div id="about-history" class="about-card-flat" data-aos="fade-up">
+                    <div class="about-card-header">
+                        <span class="about-card-icon">📜</span>
+                        <h3>ประวัติความเป็นมา</h3>
+                    </div>
+                    <div class="about-card-body">
+                        <p>สภานักเรียน โรงเรียนบดินทรเดชา (สิงห์ สิงหเสนี) ๒
+                            เป็นสถาบันและองค์กรกิจกรรมหลักที่จัดตั้งขึ้นเพื่อเปิดโอกาสให้นักเรียนมีส่วนร่วมในการปกครองตามระบอบประชาธิปไตยภายใต้ขอบเขตอันสมควร
+                            รู้จักสิทธิและหน้าที่ มีวินัย ความรับผิดชอบต่อส่วนรวม
+                            และสนับสนุนภารกิจด้านกิจการนักเรียนของโรงเรียนให้ดำเนินไปอย่างราบรื่นและสามัคคี</p>
+                        <p class="mt-2">ตราสัญลักษณ์สภานักเรียนมีตราพระเกี้ยวเป็นศูนย์รวมจิตใจ
+                            ผสานลายกนกและสีประจำโรงเรียน คือ น้ำเงิน-น้ำเงิน
+                            สื่อความหมายถึงการบริหารที่เปี่ยมไปด้วยปัญญา ความซื่อสัตย์
+                            และความกล้าหาญในการเผชิญปัญหาร่วมกันเพื่อมวลสมาชิก บ.ด.๒ ทุกคน</p>
+                    </div>
+                </div>
+
+                <!-- 2. Structure Card -->
+                <div id="about-structure" class="about-card-flat" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-card-header">
+                        <span class="about-card-icon">📊</span>
+                        <h3>โครงสร้างการบริหารงานสภาฯ</h3>
+                    </div>
+                    <div class="about-card-body">
+                        <div class="structure-flow">
+                            <div class="structure-node node-teacher">
+                                <strong>คณะครูที่ปรึกษาสภานักเรียน</strong>
+                                <span>ฝ่ายบริหารกิจการนักเรียน</span>
+                            </div>
+                            <div class="flow-line"></div>
+                            <div class="structure-node node-president">
+                                <strong>ประธานสภานักเรียน</strong>
+                                <span>ประธานอำนวยการบริหาร</span>
+                            </div>
+                            <div class="flow-line"></div>
+                            <div class="flow-split">
+                                <div class="structure-node node-vice">
+                                    <strong>รองประธาน คนที่ 1</strong>
+                                </div>
+                                <div class="structure-node node-vice">
+                                    <strong>รองประธาน คนที่ 2</strong>
+                                </div>
+                                <div class="structure-node node-vice">
+                                    <strong>รองประธาน คนที่ 3</strong>
+                                </div>
+                                <div class="structure-node node-vice">
+                                    <strong>รองประธาน คนที่ 4</strong>
+                                </div>
+                            </div>
+                            <div class="flow-line"></div>
+                            <div class="structure-departments">
+                                <div class="dept-tag">เลขานุการ</div>
+                                <div class="dept-tag">แผนงาน</div>
+                                <div class="dept-tag">การเงิน</div>
+                                <div class="dept-tag">กิจกรรม</div>
+                                <div class="dept-tag">ประสานงาน</div>
+                                <div class="dept-tag">ประชาสัมพันธ์และศิลปกรรม</div>
+                                <div class="dept-tag">โสตทัศนศึกษา</div>
+                                <div class="dept-tag">พัสดุ</div>
+                                <div class="dept-tag">พิธีกรและพิธีการ</div>
+                                <div class="dept-tag">เอกสาร</div>
+                                <div class="dept-tag">สนับสนุน</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== MEMBERS SECTION ===================== -->
+    <section id="members" class="section members-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">ทีมงานคณะกรรมการ</span>
+                <h2 class="section-title">สมาชิกสภานักเรียน</h2>
+                <p class="section-desc">รายชื่อคณะทำงานสภานักเรียน โรงเรียนบดินทรเดชา (สิงห์ สิงหเสนี) ๒ ปีการศึกษา 2569
+                    แยกตามฝ่ายงานอย่างเป็นทางการ</p>
+            </div>
+
+            <!-- 1. คณะกรรมการบริหาร -->
+            <div class="members-department-group" data-aos="fade-up">
+                <h3 class="dept-title-header">
+                    <span class="dept-icon">👑</span> คณะกรรมการบริหาร (Executive Board)
+                </h3>
+                <!-- ประธานนักเรียน -->
+                <div class="member-official-grid grid-1-col"
+                    style="display: flex; justify-content: center; margin-bottom: 24px;">
+                    <div class="member-flat-card" style="max-width: 300px; width: 100%;">
+                        <div class="member-photo-container">
+                            <img src="president.jpg" alt="นายณัฐกิตติ์ เบ็ญจมินทร์"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">ประธานนักเรียน</span>
+                            <h4 class="member-name">นายณัฐกิตติ์ เบ็ญจมินทร์</h4>
+                            <span class="member-class">ชั้น ม.5/4</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- รองประธาน -->
+                <div class="member-official-grid grid-4-cols">
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="vp1.jpg" alt="นายจักรพงศ์ เอียดสี"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">รองประธานฝ่ายกิจกรรม</span>
+                            <h4 class="member-name">นายจักรพงศ์ เอียดสี</h4>
+                            <span class="member-class">ชั้น ม.5/8</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="vp3.jpg" alt="นายธันยวรรศธร วงษ์วัฒนา"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">รองประธานฝ่ายงบประมาณฯ</span>
+                            <h4 class="member-name">นายธันยวรรศธร วงษ์วัฒนา</h4>
+                            <span class="member-class">ชั้น ม.5/13</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="vp4.jpg" alt="นางสาวณชนก เพียรดี"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">รองประธานฝ่ายนโยบายฯ</span>
+                            <h4 class="member-name">นางสาวณชนก เพียรดี</h4>
+                            <span class="member-class">ชั้น ม.5/16</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="vp2.jpg" alt="นางสาวชนัญญา ริหัด"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">รองประธานฝ่ายประชาสัมพันธ์</span>
+                            <h4 class="member-name">นางสาวชนัญญา ริหัด</h4>
+                            <span class="member-class">ชั้น ม.5/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. ฝ่ายเลขานุการ -->
+            <div class="members-department-group" data-aos="fade-up">
+                <h3 class="dept-title-header">
+                    <span class="dept-icon">📝</span> ฝ่ายเลขานุการ (Secretariat)
+                </h3>
+                <div class="member-official-grid grid-2-cols">
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <svg class="member-default-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">เลขานุการ</span>
+                            <h4 class="member-name">นายธนกฤต ขจรวิบูลย์ผล</h4>
+                            <span class="member-class">ชั้น ม.5/7</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <svg class="member-default-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">เลขานุการ</span>
+                            <h4 class="member-name">นางสาวณฐิตา อินจันทร์</h4>
+                            <span class="member-class">ชั้น ม.5/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. ฝ่ายแผนงาน -->
+            <div class="members-department-group" data-aos="fade-up">
+                <h3 class="dept-title-header">
+                    <span class="dept-icon">📅</span> ฝ่ายแผนงาน (Planning Department)
+                </h3>
+                <div class="member-official-grid grid-3-cols">
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="" alt="นางสาวชนิกานต์ มีมุข"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายแผนงาน</span>
+                            <h4 class="member-name">นางสาวชนิกานต์ มีมุข</h4>
+                            <span class="member-class">ชั้น ม.5/13</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="plan2.jpg" alt="นายปภังกร วงค์อาษา"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายแผนงาน</span>
+                            <h4 class="member-name">นายปภังกร วงค์อาษา</h4>
+                            <span class="member-class">ชั้น ม.5/15</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="plan1.jpg" alt="นางสาวปาณิสรา โตสนธิ์"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายแผนงาน</span>
+                            <h4 class="member-name">นางสาวปาณิสรา โตสนธิ์</h4>
+                            <span class="member-class">ชั้น ม.5/16</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. ฝ่ายการเงิน -->
+            <div class="members-department-group" data-aos="fade-up">
+                <h3 class="dept-title-header">
+                    <span class="dept-icon">💰</span> ฝ่ายการเงิน (Finance Department)
+                </h3>
+                <div class="member-official-grid grid-2-cols">
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="fin1.jpg" alt="นายสรณัฐพนธ์ สุวรรณโชติ"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายการเงิน</span>
+                            <h4 class="member-name">นายสรณัฐพนธ์ สุวรรณโชติ</h4>
+                            <span class="member-class">ชั้น ม.5/7</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="fin2.jpg" alt="นางสาวพิมญาดา อาจณรงค์ฤทธิ์"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายการเงิน</span>
+                            <h4 class="member-name">นางสาวพิมญาดา อาจณรงค์ฤทธิ์</h4>
+                            <span class="member-class">ชั้น ม.5/15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. ฝ่ายกิจกรรม -->
+            <div class="members-department-group" data-aos="fade-up">
+                <h3 class="dept-title-header">
+                    <span class="dept-icon">🎪</span> ฝ่ายกิจกรรม (Activities Department)
+                </h3>
+                <div class="member-official-grid grid-4-cols">
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="act4.jpg" alt="นายภัทรดนัย ก๋งอุบล"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายกิจกรรม</span>
+                            <h4 class="member-name">นายภัทรดนัย ก๋งอุบล</h4>
+                            <span class="member-class">ชั้น ม.5/1</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="act3.jpg" alt="นางสาวกานต์พิชชา เครือวงศ์"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายกิจกรรม</span>
+                            <h4 class="member-name">นางสาวกานต์พิชชา เครือวงศ์</h4>
+                            <span class="member-class">ชั้น ม.5/5</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="act2.jpg" alt="นางสาวณปภัช โชคพระสมบัติ"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายกิจกรรม</span>
+                            <h4 class="member-name">นางสาวณปภัช โชคพระสมบัติ</h4>
+                            <span class="member-class">ชั้น ม.5/8</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="act1.jpg" alt="นางสาวนิณัฐชา ฤทธิรัตน์"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายกิจกรรม</span>
+                            <h4 class="member-name">นางสาวนิณัฐชา ฤทธิรัตน์</h4>
+                            <span class="member-class">ชั้น ม.5/9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. ฝ่ายประสานงาน -->
+            <div class="members-department-group" data-aos="fade-up">
+                <h3 class="dept-title-header">
+                    <span class="dept-icon">🤝</span> ฝ่ายประสานงาน (Coordination Department)
+                </h3>
+                <div class="member-official-grid grid-2-cols">
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="coord1.jpg" alt="นายนิธิศ ขาวหิรัญ"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายประสานงาน</span>
+                            <h4 class="member-name">นายนิธิศ ขาวหิรัญ</h4>
+                            <span class="member-class">ชั้น ม.5/13</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="coord2.jpg" alt="นางสาวนะดา ยีกา"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายประสานงาน</span>
+                            <h4 class="member-name">นางสาวนะดา ยีกา</h4>
+                            <span class="member-class">ชั้น ม.5/15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. ฝ่ายประชาสัมพันธ์และศิลปกรรม -->
+            <div class="members-department-group" data-aos="fade-up">
+                <h3 class="dept-title-header">
+                    <span class="dept-icon">🎨</span> ฝ่ายประชาสัมพันธ์และศิลปกรรม (PR & Arts Department)
+                </h3>
+                <div class="member-official-grid grid-3-cols">
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="art1.jpg" alt="นายจิราวัฒน์ คงปรางค์"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายประชาสัมพันธ์ฯ</span>
+                            <h4 class="member-name">นางสาวกฤตรมณ กลับสว่าง</h4>
+                            <span class="member-class">ชั้น ม.5/7</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="art2.jpg" alt="นางสาวสุทธ์กนิษฐ์ หาญธนชาติ"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายประชาสัมพันธ์ฯ</span>
+                            <h4 class="member-name">นางสาวสุทธ์กนิษฐ์ หาญธนชาติ</h4>
+                            <span class="member-class">ชั้น ม.5/9</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <svg class="member-default-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายประชาสัมพันธ์ฯ</span>
+                            <h4 class="member-name">นายจิราวัฒน์ คงปรางค์</h4>
+                            <span class="member-class">ชั้น ม.5/16</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. ฝ่ายโสตทัศนศึกษา -->
+            <div class="members-department-group" data-aos="fade-up">
+                <h3 class="dept-title-header">
+                    <span class="dept-icon">📸</span> ฝ่ายโสตทัศนศึกษา (Audio-Visual Department)
+                </h3>
+                <div class="member-official-grid grid-3-cols">
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="av1.jpg" alt="นายเมทัส เรืองเดช"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายโสตทัศนศึกษา</span>
+                            <h4 class="member-name">นายเมทัส เรืองเดช</h4>
+                            <span class="member-class">ชั้น ม.5/7</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="av2.jpg" alt="นางสาวปวรวรรณ พร้อมพิพัฒนา"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายโสตทัศนศึกษา</span>
+                            <h4 class="member-name">นางสาวปวรวรรณ พร้อมพิพัฒนา</h4>
+                            <span class="member-class">ชั้น ม.5/8</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="av3.jpg" alt="นายอาทิตย์ อุ่นเรือน"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายโสตทัศนศึกษา</span>
+                            <h4 class="member-name">นายอาทิตย์ อุ่นเรือน</h4>
+                            <span class="member-class">ชั้น ม.5/14</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. ฝ่ายพัสดุ -->
+            <div class="members-department-group" data-aos="fade-up">
+                <h3 class="dept-title-header">
+                    <span class="dept-icon">📦</span> ฝ่ายพัสดุ (Supplies Department)
+                </h3>
+                <div class="member-official-grid grid-2-cols">
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="sup1.jpg" alt="นางสาววรกานต์ ท้าวนอก"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายพัสดุ</span>
+                            <h4 class="member-name">นางสาววรกานต์ ท้าวนอก</h4>
+                            <span class="member-class">ชั้น ม.5/15</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="sup2.jpg" alt="นางสาวนภสร กุลสิน"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายพัสดุ</span>
+                            <h4 class="member-name">นางสาวนภสร กุลสิน</h4>
+                            <span class="member-class">ชั้น ม.5/16</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. ฝ่ายพิธีกรและพิธีการ -->
+            <div class="members-department-group" data-aos="fade-up">
+                <h3 class="dept-title-header">
+                    <span class="dept-icon">🎤</span> ฝ่ายพิธีกรและพิธีการ (MC & Ceremonial Department)
+                </h3>
+                <div class="member-official-grid grid-4-cols">
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="mc2.jpg" alt="นายปรมัตถ์ ศรีวะโสภา"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายพิธีกรและพิธีการ</span>
+                            <h4 class="member-name">นายปรมัตถ์ ศรีวะโสภา</h4>
+                            <span class="member-class">ชั้น ม.5/1</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="mc1.jpg" alt="นายสรวิศ ทองชุม"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายพิธีกรและพิธีการ</span>
+                            <h4 class="member-name">นายสรวิศ ทองชุม</h4>
+                            <span class="member-class">ชั้น ม.5/4</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="mc3.jpg" alt="นางสาวปรางค์กนก เสถียรุจิกานนท์"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายพิธีกรและพิธีการ</span>
+                            <h4 class="member-name">นางสาวปรางค์กนก เสถียรุจิกานนท์</h4>
+                            <span class="member-class">ชั้น ม.5/8</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="mc4.jpg" alt="นางสาวเขมิกา สิทธิกูล"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายพิธีกรและพิธีการ</span>
+                            <h4 class="member-name">นางสาวเขมิกา สิทธิกูล</h4>
+                            <span class="member-class">ชั้น ม.5/13</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. ฝ่ายเอกสาร -->
+            <div class="members-department-group" data-aos="fade-up">
+                <h3 class="dept-title-header">
+                    <span class="dept-icon">📂</span> ฝ่ายเอกสาร (Documentation Department)
+                </h3>
+                <div class="member-official-grid grid-3-cols">
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="doc3.jpg" alt="นางสาวธันยรสธร วงษ์วัฒนา"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายเอกสาร</span>
+                            <h4 class="member-name">นางสาวธันยรสธร วงษ์วัฒนา</h4>
+                            <span class="member-class">ชั้น ม.5/7</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="doc2.jpg" alt="นายพงศ์วนัทน์ สุชาติพงศ์"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายเอกสาร</span>
+                            <h4 class="member-name">นายพงศ์วนัทน์ สุชาติพงศ์</h4>
+                            <span class="member-class">ชั้น ม.5/14</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="doc1.jpg" alt="นางสาวกานต์ธีรา แก้วนุช"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายเอกสาร</span>
+                            <h4 class="member-name">นางสาวกานต์ธีรา แก้วนุช</h4>
+                            <span class="member-class">ชั้น ม.5/15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. ฝ่ายสนับสนุน -->
+            <div class="members-department-group" data-aos="fade-up">
+                <h3 class="dept-title-header">
+                    <span class="dept-icon">🔧</span> ฝ่ายสนับสนุน (Support Department)
+                </h3>
+                <div class="member-official-grid grid-3-cols">
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="sup3.jpg" alt="นายกัณฑ์กฤษณ์ คัคนางกูล"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายสนับสนุน</span>
+                            <h4 class="member-name">นายกัณฑ์กฤษณ์ คัคนางกูล</h4>
+                            <span class="member-class">ชั้น ม.5/13</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="sup5.jpg" alt="นายวชิรวิทย์ คงมี"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายสนับสนุน</span>
+                            <h4 class="member-name">นายวชิรวิทย์ คงมี</h4>
+                            <span class="member-class">ชั้น ม.5/14</span>
+                        </div>
+                    </div>
+                    <div class="member-flat-card">
+                        <div class="member-photo-container">
+                            <img src="sup4.jpg" alt="นายวงศกร ทิตระกูล"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="member-info-box">
+                            <span class="member-position">กรรมการฝ่ายสนับสนุน</span>
+                            <h4 class="member-name">นายวงศกร ทิตระกูล</h4>
+                            <span class="member-class">ชั้น ม.5/14</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXAM ARCHIVE SECTION ===================== -->
+    <section id="exams" class="section exams-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">แหล่งเรียนรู้</span>
+                <h2 class="section-title">คลังข้อสอบเก่า</h2>
+                <p class="section-desc">รวบรวมและจัดเก็บข้อสอบกลางภาคและปลายภาคของโรงเรียน
+                    เพื่ออำนวยความสะดวกในการทบทวนบทเรียนสำหรับนักเรียนทุกคน</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="exam-filters-panel" data-aos="fade-up" data-aos-delay="100">
+                <div class="filters-flex-container">
+                    <div class="filter-select-item">
+                        <label class="filter-select-label" for="gradeSelectFilter">ระดับชั้นเรียน</label>
+                        <select class="form-select-flat" id="gradeSelectFilter">
+                            <option value="all">ระดับชั้นเรียนทั้งหมด</option>
+                            <option value="ม.1">มัธยมศึกษาปีที่ 1</option>
+                            <option value="ม.2">มัธยมศึกษาปีที่ 2</option>
+                            <option value="ม.3">มัธยมศึกษาปีที่ 3</option>
+                            <option value="ม.4">มัธยมศึกษาปีที่ 4</option>
+                            <option value="ม.5">มัธยมศึกษาปีที่ 5</option>
+                            <option value="ม.6">มัธยมศึกษาปีที่ 6</option>
+                        </select>
+                    </div>
+                    <div class="filter-select-item">
+                        <label class="filter-select-label" for="subjectSelectFilter">กลุ่มสาระการเรียนรู้</label>
+                        <select class="form-select-flat" id="subjectSelectFilter">
+                            <option value="all">กลุ่มสาระการเรียนรู้ทั้งหมด</option>
+                            <option value="math">กลุ่มสาระฯ คณิตศาสตร์</option>
+                            <option value="science">กลุ่มสาระฯ วิทยาศาสตร์และเทคโนโลยี</option>
+                            <option value="thai">กลุ่มสาระฯ ภาษาไทย</option>
+                            <option value="foreign">กลุ่มสาระฯ ภาษาต่างประเทศ (อังกฤษ)</option>
+                            <option value="social">กลุ่มสาระฯ สังคมศึกษา ศาสนา และวัฒนธรรม</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exam Results Count -->
+            <div class="exam-results-info" data-aos="fade-up">
+                <span id="examCount">กำลังดึงข้อมูล...</span>
+            </div>
+
+            <!-- Exam Table List -->
+            <div class="table-responsive-wrapper" id="examTableWrapper" data-aos="fade-up">
+                <table class="exam-table-flat">
+                    <thead>
+                        <tr>
+                            <th style="width: 80px;" class="text-center">ลำดับ</th>
+                            <th>รายชื่อข้อสอบ / รหัสวิชา</th>
+                            <th style="width: 100px;" class="text-center">ระดับชั้น</th>
+                            <th style="width: 200px;">กลุ่มสาระการเรียนรู้</th>
+                            <th style="width: 120px;" class="text-center">ภาคเรียน</th>
+                            <th style="width: 180px;" class="text-center">ลิงก์ดาวน์โหลด</th>
+                        </tr>
+                    </thead>
+                    <tbody id="examTableBody">
+                        <!-- Exams will be generated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Empty State -->
+            <div class="exam-empty-box" id="examEmpty" style="display: none;">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                </svg>
+                <p>ขออภัย ไม่พบเอกสารข้อสอบที่ตรงตามเงื่อนไขการค้นหาของคุณ</p>
+                <button class="btn btn-navy-flat" onclick="resetFilters()">แสดงข้อสอบทั้งหมด</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">ศูนย์รับเรื่อง</span>
+                <h2 class="section-title">ติดต่อ & ร้องเรียนสภาฯ</h2>
+                <p class="section-desc">ส่งเรื่องข้อร้องเรียน ข้อเสนอแนะ หรือความคุ้มครองช่วยเหลือต่าง ๆ
+                    โดยตรงต่อคณะกรรมการสภานักเรียน</p>
+            </div>
+
+            <div class="contact-layout">
+                <!-- Contact Info -->
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>ที่ตั้งสำนักงาน</h4>
+                            <p>ห้องสภานักเรียน อาคารเรียน 1 หน้าลานเขียน<br>โรงเรียนบดินทรเดชา (สิงห์ สิงหเสนี) ๒</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>อีเมลติดต่อราชการ</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>เวลาทำการ</h4>
+                            <p>วันจันทร์ - ศุกร์ (เวลาพักกลางวัน 11:50 - 12:40 น.)<br>และหลังเวลาเลิกเรียนจนถึง 16:00 น.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>ช่องทางติดตามสื่อโซเชียล</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/share/191gdRccHH/" target="_blank" class="social-icon"
+                                title="Facebook" aria-label="Facebook">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/scbodin2.official?igsh=MTM4MHV1eDYxN2th" target="_blank"
+                                class="social-icon" title="Instagram" aria-label="Instagram">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                </svg>
+                            </a>
+                            <a href="https://www.tiktok.com/@sc.bodin2?_r=1&_t=ZS-98PY1uXDv9M" target="_blank"
+                                class="social-icon" title="TikTok" aria-label="TikTok">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">ชื่อ-นามสกุลผู้แจ้งเรื่อง</label>
+                            <input type="text" id="contactName" class="form-input-flat"
+                                placeholder="กรอกชื่อและนามสกุลจริง" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactClass" class="form-label">ระดับชั้น / ห้องเรียน</label>
+                                <input type="text" id="contactClass" class="form-input-flat"
+                                    placeholder="ตัวอย่าง: ม.4/1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactType" class="form-label">ประเภทความประสงค์</label>
+                                <select id="contactType" class="form-select-flat" required>
+                                    <option value="" disabled selected>กรุณาเลือกประเภท...</option>
+                                    <option value="suggestion">ข้อเสนอแนะเพื่อพัฒนา</option>
+                                    <option value="complaint">ร้องเรียนปัญหาในโรงเรียน</option>
+                                    <option value="question">สอบถามรายละเอียดทั่วไป</option>
+                                    <option value="other">เรื่องอื่นๆ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject" class="form-label">หัวเรื่องติดต่อ</label>
+                            <input type="text" id="contactSubject" class="form-input-flat"
+                                placeholder="ระบุหัวข้อสั้นๆ ที่เข้าใจง่าย" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">รายละเอียดเนื้อความ</label>
+                            <textarea id="contactMessage" class="form-input-flat form-textarea"
+                                placeholder="อธิบายรายละเอียด ข้อเท็จจริง หรือข้อมูลประกอบเรื่อง..." rows="5"
+                                required></textarea>
+                        </div>
+                        <div class="form-group form-checkbox-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" id="contactAnonymous">
+                                <span class="checkbox-custom"></span>
+                                <span>ประสงค์ส่งข้อมูลโดยปกปิดตัวตน (Anonymous)</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-navy-flat btn-full" id="submitBtn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                            <span>ส่งเรื่องแจ้งต่อสภานักเรียน</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                            <path d="M20 8 L20 32 M12 16 L28 16 M14 24 L26 24" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                        <span>สภานักเรียน บ.ด.๒</span>
+                    </div>
+                    <p class="footer-desc">คณะกรรมการสภานักเรียน ปีการศึกษา 2569<br>โรงเรียนบดินทรเดชา (สิงห์ สิงหเสนี)
+                        ๒</p>
+                </div>
+                <div class="footer-links">
+                    <h4>ลิงก์เมนูด่วน</h4>
+                    <a href="#home">หน้าแรก</a>
+                    <a href="#about">ข้อมูลทั่วไปเกี่ยวกับสภาฯ</a>
+                    <a href="#members">รายชื่อคณะทำงาน</a>
+                    <a href="#exams">คลังข้อสอบโรงเรียน</a>
+                    <a href="#contact">ติดต่อแจ้งร้องเรียน</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2569 สภานักเรียน โรงเรียนบดินทรเดชา (สิงห์ สิงหเสนี) ๒ — สงวนลิขสิทธิ์ตามพระราชบัญญัติ</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+            </div>
+            <h3>ส่งข้อความเรียบร้อยแล้ว</h3>
+            <p>สภานักเรียนได้รับเรื่องเรียบร้อยแล้ว<br>พวกเราจะเร่งดำเนินการและประสานงานโดยเร็วที่สุด</p>
+            <button class="btn btn-navy-flat" onclick="closeModal()">รับทราบ</button>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+        </svg>
+    </button>
+
+    <!-- Admin Login Modal -->
+    <div class="login-modal-overlay" id="adminLoginModal">
+        <div class="login-modal">
+            <button class="login-close-btn" aria-label="ปิด">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <div class="login-modal-header">
+                <div class="login-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                    </svg>
+                </div>
+                <h3>เข้าสู่ระบบ Admin</h3>
+                <p>ระบบจัดการข้อมูลสภานักเรียน บ.ด.๒</p>
+            </div>
+            <div class="login-modal-body">
+                <form id="adminLoginForm">
+                    <div class="login-form-group">
+                        <label for="loginEmail" class="login-form-label">อีเมลผู้ดูแลระบบ</label>
+                        <input type="email" id="loginEmail" class="login-form-input" placeholder="กรอกอีเมลผู้ดูแลระบบ"
+                            required>
+                    </div>
+                    <div class="login-form-group">
+                        <label for="loginPassword" class="login-form-label">รหัสผ่าน</label>
+                        <input type="password" id="loginPassword" class="login-form-input" placeholder="กรอกรหัสผ่าน"
+                            required>
+                    </div>
+                    <div class="login-error-msg" id="loginErrorMsg"></div>
+                    <button type="submit" class="login-submit-btn">เข้าสู่ระบบ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
