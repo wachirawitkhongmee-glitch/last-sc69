@@ -445,7 +445,7 @@ ul {
             rgba(7, 21, 44, 0.72) 0%,
             rgba(7, 21, 44, 0.55) 40%,
             rgba(7, 21, 44, 0.72) 100%),
-        url('hero-bg.jpg');
+        url('images/hero-bg.jpg');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -919,6 +919,87 @@ ul {
     box-shadow: var(--shadow-sm);
 }
 
+
+/* ---------- Policies Section ---------- */
+.policies-section {
+    background-color: var(--sky-light);
+    border-top: 1px solid var(--border-color);
+}
+
+.policies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.policy-card {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.policy-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--sky-primary);
+}
+
+.policy-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--sky-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-size: 1.8rem;
+    color: var(--sky-dark);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.policy-card:hover .policy-icon-wrapper {
+    background-color: var(--sky-primary);
+    color: var(--white);
+}
+
+.policy-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--navy-primary);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.policy-desc {
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.policy-timeline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--gray-500);
+    padding-top: 16px;
+    border-top: 1px dashed var(--border-color);
+}
+
+.policy-timeline svg {
+    width: 16px;
+    height: 16px;
+    color: var(--sky-primary);
+}
 
 /* ---------- Members Section ---------- */
 .members-section {
@@ -1873,6 +1954,49 @@ ul {
     border-color: var(--sky-primary);
     box-shadow: 0 0 0 3px rgba(42, 125, 225, 0.1);
     background: var(--white);
+}
+
+.password-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.password-input-wrapper .login-form-input {
+    width: 100%;
+    padding-right: 44px;
+}
+
+.password-toggle-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    z-index: 10;
+    outline: none;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.password-toggle-btn:hover {
+    color: #0e2240;
+    background: rgba(14, 34, 64, 0.08);
+}
+
+.password-toggle-btn svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    display: block;
 }
 
 .login-error-msg {

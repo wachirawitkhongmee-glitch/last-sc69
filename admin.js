@@ -229,11 +229,15 @@ const DataStore = {
 };
 
 // =====================================================
-// Admin Credentials (hardcoded for now)
+// Admin Credentials (loaded from APP_CONFIG)
 // =====================================================
 const ADMIN_CREDENTIALS = {
-    email: 'student69@gmail.com',
-    password: '123456789'
+    get email() {
+        return (window.APP_CONFIG && window.APP_CONFIG.ADMIN_EMAIL) || 'student69@gmail.com';
+    },
+    get password() {
+        return (window.APP_CONFIG && window.APP_CONFIG.ADMIN_PASSWORD) || '11222333344444';
+    }
 };
 
 // =====================================================
@@ -612,8 +616,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (tableScroll) tableScroll.style.display = 'block';
 
         const subjectNames = {
-            'math': 'คณิตศาสตร์',
-            'science': 'วิทยาศาสตร์ฯ',
+            'math_basic': 'คณิตศาสตร์พื้นฐาน',
+            'math_add': 'คณิตศาสตร์เพิ่มเติม',
+            'science': 'วิทยาศาสตร์และเทคโนโลยี',
+            'sci_physics': 'ฟิสิกส์',
+            'sci_chem': 'เคมี',
+            'sci_bio': 'ชีววิทยา',
+            'sci_astro': 'ดาราศาสตร์',
             'thai': 'ภาษาไทย',
             'foreign': 'ภาษาต่างประเทศ',
             'social': 'สังคมศึกษาฯ'

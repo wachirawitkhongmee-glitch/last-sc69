@@ -167,18 +167,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // =====================
     // Initial Default Exams (seeded to localStorage if empty)
     const initialDefaultExams = [
-        { id: 1, title: 'คณิตศาสตร์พื้นฐาน (ค21101) - กลางภาค 1/2569', subject: 'math', grade: 'ม.1', term: 'กลางภาค', pdfLink: 'https://drive.google.com/' },
-        { id: 2, title: 'คณิตศาสตร์เพิ่มเติม (ค31201) - กลางภาค 1/2569', subject: 'math', grade: 'ม.4', term: 'กลางภาค', pdfLink: 'https://drive.google.com/' },
+        { id: 1, title: 'คณิตศาสตร์พื้นฐาน (ค21101) - กลางภาค 1/2569', subject: 'math_basic', grade: 'ม.1', term: 'กลางภาค', pdfLink: 'https://drive.google.com/' },
+        { id: 2, title: 'คณิตศาสตร์เพิ่มเติม (ค31201) - กลางภาค 1/2569', subject: 'math_add', grade: 'ม.4', term: 'กลางภาค', pdfLink: 'https://drive.google.com/' },
         { id: 3, title: 'วิทยาศาสตร์พื้นฐาน (ว22101) - ปลายภาค 2/2568', subject: 'science', grade: 'ม.2', term: 'ปลายภาค', pdfLink: 'https://drive.google.com/' },
-        { id: 4, title: 'ฟิสิกส์เพิ่มเติม (ว30201) - กลางภาค 1/2569', subject: 'science', grade: 'ม.5', term: 'กลางภาค', pdfLink: 'https://drive.google.com/' },
+        { id: 4, title: 'ฟิสิกส์เพิ่มเติม (ว30201) - กลางภาค 1/2569', subject: 'sci_physics', grade: 'ม.5', term: 'กลางภาค', pdfLink: 'https://drive.google.com/' },
         { id: 5, title: 'ภาษาไทยพื้นฐาน (ท23101) - ปลายภาค 2/2568', subject: 'thai', grade: 'ม.3', term: 'ปลายภาค', pdfLink: 'https://drive.google.com/' },
         { id: 6, title: 'ภาษาไทยเพิ่มเติม (ท31201) - กลางภาค 1/2569', subject: 'thai', grade: 'ม.4', term: 'กลางภาค', pdfLink: 'https://drive.google.com/' },
         { id: 7, title: 'ภาษาอังกฤษพื้นฐาน (อ21101) - กลางภาค 1/2569', subject: 'foreign', grade: 'ม.1', term: 'กลางภาค', pdfLink: 'https://drive.google.com/' },
         { id: 8, title: 'ภาษาอังกฤษอ่าน-เขียน (อ33201) - ปลายภาค 2/2568', subject: 'foreign', grade: 'ม.6', term: 'ปลายภาค', pdfLink: 'https://drive.google.com/' },
         { id: 9, title: 'สังคมศึกษาฯ (ส22101) - กลางภาค 1/2569', subject: 'social', grade: 'ม.2', term: 'กลางภาค', pdfLink: 'https://drive.google.com/' },
         { id: 10, title: 'สังคมศึกษาฯ (ส32101) - ปลายภาค 2/2568', subject: 'social', grade: 'ม.5', term: 'ปลายภาค', pdfLink: 'https://drive.google.com/' },
-        { id: 11, title: 'เคมีเพิ่มเติม (ว30221) - ปลายภาค 2/2568', subject: 'science', grade: 'ม.4', term: 'ปลายภาค', pdfLink: 'https://drive.google.com/' },
-        { id: 12, title: 'คณิตศาสตร์พื้นฐาน (ค23101) - ปลายภาค 2/2568', subject: 'math', grade: 'ม.3', term: 'ปลายภาค', pdfLink: 'https://drive.google.com/' }
+        { id: 11, title: 'เคมีเพิ่มเติม (ว30221) - ปลายภาค 2/2568', subject: 'sci_chem', grade: 'ม.4', term: 'ปลายภาค', pdfLink: 'https://drive.google.com/' },
+        { id: 12, title: 'คณิตศาสตร์พื้นฐาน (ค23101) - ปลายภาค 2/2568', subject: 'math_basic', grade: 'ม.3', term: 'ปลายภาค', pdfLink: 'https://drive.google.com/' }
     ];
 
     function getExamsList() {
@@ -195,11 +195,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const subjectMapping = {
-        'math': 'คณิตศาสตร์',
+        'math_basic': 'คณิตศาสตร์พื้นฐาน',
+        'math_add': 'คณิตศาสตร์เพิ่มเติม',
         'science': 'วิทยาศาสตร์ฯ',
+        'sci_physics': 'ฟิสิกส์',
+        'sci_chem': 'เคมี',
+        'sci_bio': 'ชีววิทยา',
+        'sci_astro': 'ดาราศาสตร์',
         'thai': 'ภาษาไทย',
         'foreign': 'ภาษาต่างประเทศ',
         'social': 'สังคมศึกษาฯ'
+    };
+
+    const subjectBaseClass = {
+        'math_basic': 'math',
+        'math_add': 'math',
+        'science': 'science',
+        'sci_physics': 'science',
+        'sci_chem': 'science',
+        'sci_bio': 'science',
+        'sci_astro': 'science',
+        'thai': 'thai',
+        'foreign': 'foreign',
+        'social': 'social'
     };
 
     let activeGrade = 'all';
@@ -269,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <td class="text-center">${index + 1}</td>
                     <td><strong>${escapeHtmlText(exam.title)}</strong></td>
                     <td class="text-center"><span class="badge badge-grade">${escapeHtmlText(exam.grade)}</span></td>
-                    <td><span class="badge badge-subject badge-${exam.subject}">${subjectMapping[exam.subject] || escapeHtmlText(exam.subject)}</span></td>
+                    <td><span class="badge badge-subject badge-${subjectBaseClass[exam.subject] || exam.subject}">${subjectMapping[exam.subject] || escapeHtmlText(exam.subject)}</span></td>
                     <td class="text-center">${escapeHtmlText(exam.term || 'กลางภาค')}</td>
                     <td class="text-center"><div class="download-btns-flex">${actionButtons.join('')}</div></td>
                 </tr>
@@ -716,7 +734,8 @@ function resetFilters() {
                 // Check if already logged in
                 try {
                     const session = JSON.parse(localStorage.getItem('sc69_admin_session'));
-                    if (session && session.email === 'student69@gmail.com') {
+                    const targetEmail = (window.APP_CONFIG && window.APP_CONFIG.ADMIN_EMAIL) || 'student69@gmail.com';
+                    if (session && session.email === targetEmail) {
                         window.location.href = 'admin.html';
                         return;
                     }
@@ -742,6 +761,25 @@ function resetFilters() {
             });
         }
 
+        // Toggle password visibility
+        const togglePasswordBtn = document.getElementById('togglePasswordBtn');
+        const loginPasswordInput = document.getElementById('loginPassword');
+        if (togglePasswordBtn && loginPasswordInput) {
+            const eyeOpen = togglePasswordBtn.querySelector('.eye-open');
+            const eyeClosed = togglePasswordBtn.querySelector('.eye-closed');
+
+            togglePasswordBtn.addEventListener('click', () => {
+                const isPassword = loginPasswordInput.getAttribute('type') === 'password';
+                loginPasswordInput.setAttribute('type', isPassword ? 'text' : 'password');
+                
+                if (eyeOpen && eyeClosed) {
+                    eyeOpen.style.display = isPassword ? 'none' : 'block';
+                    eyeClosed.style.display = isPassword ? 'block' : 'none';
+                }
+                togglePasswordBtn.setAttribute('aria-label', isPassword ? 'ซ่อนรหัสผ่าน' : 'แสดงรหัสผ่าน');
+            });
+        }
+
         // Login form submit
         if (loginForm) {
             loginForm.addEventListener('submit', (e) => {
@@ -750,7 +788,10 @@ function resetFilters() {
                 const email = document.getElementById('loginEmail').value.trim();
                 const password = document.getElementById('loginPassword').value;
 
-                if (email === 'student69@gmail.com' && password === '123456789') {
+                const adminEmail = (window.APP_CONFIG && window.APP_CONFIG.ADMIN_EMAIL) || 'student69@gmail.com';
+                const adminPassword = (window.APP_CONFIG && window.APP_CONFIG.ADMIN_PASSWORD) || '11222333344444';
+
+                if (email === adminEmail && password === adminPassword) {
                     // Save session
                     localStorage.setItem('sc69_admin_session', JSON.stringify({
                         email: email,
